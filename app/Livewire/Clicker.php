@@ -25,6 +25,10 @@ class Clicker extends Component
             "email" => $this->email,
             "password" => bcrypt($this->password)
         ]);
+
+        $this->reset(['name', 'email', 'password']);
+
+        request()->session()->flash('success', 'User created successfully!');
     }
     
     public function render()
