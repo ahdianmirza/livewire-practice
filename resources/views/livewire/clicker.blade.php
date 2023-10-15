@@ -49,7 +49,11 @@
             <span class="text-green-500">Uploading...</span>
         </div>
 
-        <button type="submit"
+        <div wire:loading.delay.long>
+            <span class="text-green-500">Sending...</span>
+        </div>
+
+        <button wire:loading.class.remove="text-white" wire:loading.attr="disabled" type="submit"
             class="block mt-3 px-4 py-2 bg-teal-500 text-white font-semibold rounded hover:bg-teal-600">Create
             +</button>
     </form>

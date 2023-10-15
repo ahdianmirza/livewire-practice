@@ -26,6 +26,8 @@ class Clicker extends Component
     public $image;
 
     public function createNewUser() {
+        sleep(2);
+
         $validated = $this->validate();
 
         if ($this->image) {
