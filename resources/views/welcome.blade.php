@@ -16,12 +16,12 @@
 
 <body class="antialiased">
     <div class="flex">
-        <div class="2/4">
+        <div class="w-full">
             @livewire('users-list')
         </div>
-        <div class="w-2/4">
+        {{-- <div class="w-2/4">
             @livewire('clicker')
-        </div>
+        </div> --}}
     </div>
 </body>
 
