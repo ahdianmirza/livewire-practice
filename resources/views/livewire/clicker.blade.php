@@ -53,6 +53,11 @@
             <span class="text-green-500">Sending...</span>
         </div>
 
+        <button type="button" @click="$dispatch('user-created')"
+            class="block mt-3 px-4 py-2 bg-blue-500 text-white font-semibold rounded hover:bg-blue-600">
+            Reload List
+        </button>
+
         <button wire:loading.class.remove="text-white" wire:loading.attr="disabled" type="submit"
             class="block mt-3 px-4 py-2 bg-teal-500 text-white font-semibold rounded hover:bg-teal-600">Create
             +</button>

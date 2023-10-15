@@ -15,7 +15,14 @@
 </head>
 
 <body class="antialiased">
-    @livewire('clicker')
+    <div class="flex">
+        <div class="2/4">
+            @livewire('users-list')
+        </div>
+        <div class="w-2/4">
+            @livewire('clicker')
+        </div>
+    </div>
 </body>
 
 </html>
